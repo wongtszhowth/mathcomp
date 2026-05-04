@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社際數學比賽 V2</title>
+    <title>社際數學比賽 2026</title>
     <!-- 強制載入 MathJax 3 -->
     <script>
     window.MathJax = {
@@ -357,7 +357,6 @@
                 歡迎參加社際數學比賽<br>
                 Inter-house Mathematics Competition
             </div>
-            <div style="font-size: 1.2vw; color: #888;">請點擊「下一頁」開始</div>
         </div>
 
         <!-- Slide 2: Rules -->
@@ -365,10 +364,10 @@
             <div class="q-number">比賽規則</div>
             <div class="q-text" style="font-size: 2.2vw; text-align: left; width: 80%;">
                 <ul>
-                    <li><strong>必答題 (6題):</strong> 對 +20 / 錯 0 / 不答 -20</li>
-                    <li><strong>搶答題 (20題):</strong> 對 +30 / 錯 -10</li>
-                    <li><strong>補答 (最低分社別):</strong> 對 +20 / 錯 -5</li>
-                    <li><strong>3倍工具:</strong> 搶答題分數 (包括補答) 加減乘 3 倍</li>
+                    <li><strong>必答題 (6題):</strong> 答對 +20 / 答錯 0 / 不作答 -20</li>
+                    <li><strong>搶答題 (20題):</strong> 答對 +30 / 答錯 -10</li>
+                    <li><strong>補答 (當前最低分社別):</strong> 答對 +20 / 答錯 -5</li>
+                    <li><strong>「3倍分數」工具:</strong> 搶答題分數 (包括補答) 加減乘 3 倍。每社別可用兩次。</li>
                 </ul>
             </div>
         </div>
@@ -377,11 +376,11 @@
         <div class="slide">
             <div class="q-number">必答題 第 1 題</div>
             <div class="q-text">
-                解方程 $5x - \frac{5}{2} = 10$。
+                解方程 $5x - \dfrac{5}{2} = 10$。
             </div>
             <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
             <div class="answer-box">
-                $x = \frac{5}{2}$
+                $x = \dfrac{5}{2}$
             </div>
         </div>
 
@@ -389,11 +388,11 @@
         <div class="slide">
             <div class="q-number">必答題 第 2 題</div>
             <div class="q-text">
-                $\frac{2}{3} + \frac{1}{6} - \frac{7}{12} = $
+                $\dfrac{2}{3} + \dfrac{1}{6} - \dfrac{7}{12} = $
             </div>
             <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
             <div class="answer-box">
-                $\frac{1}{4}$
+                $\dfrac{1}{4}$
             </div>
         </div>
 
@@ -446,46 +445,290 @@
             </div>
         </div>
 
-        <!-- Slide 5: MCQ + LaTeX -->
+       <!-- Slide 9: MCQ + LaTeX -->
         <div class="slide">
             <div class="q-number">搶答題 第 1 題</div>
             <div class="q-text">
-                若 $\sin 	heta = rac{3}{5}$ 且 $90^\circ < 	heta < 180^\circ$，求 $\cos 	heta$。
+                以下哪個數是質數？
             </div>
             <div class="mcq-container">
-                <div class="mcq-option">A. $rac{4}{5}$</div>
-                <div class="mcq-option" id="mcq-1-ans">B. $-rac{4}{5}$</div>
-                <div class="mcq-option">C. $rac{16}{25}$</div>
-                <div class="mcq-option">D. $-rac{3}{4}$</div>
+                <div class="mcq-option">A.&ensp; $49$</div>
+                <div class="mcq-option">B.&ensp; $57$</div>
+                <div class="mcq-option">C.&ensp; $75$</div>
+                <div class="mcq-option" id="mcq-1-ans">D.&ensp; $89$</div>
             </div>
             <button class="show-ans-btn" onclick="revealMCQ(this, 'mcq-1-ans')">顯示答案</button>
             <div class="answer-box">
-                由於 $	heta$ 在第二象限，$\cos 	heta$ 為負值。<br>
-                $\cos^2 	heta = 1 - \sin^2 	heta = 1 - rac{9}{25} = rac{16}{25}$ <br>
-                $\cos 	heta = -\sqrt{rac{16}{25}} = \mathbf{-rac{4}{5}}$ (B)
+                D
             </div>
         </div>
 
-        <!-- Slide 6: Image Question Placeholder -->
+        <!-- Slide 10: LaTeX Test -->
         <div class="slide">
             <div class="q-number">搶答題 第 2 題</div>
             <div class="q-text">
-                下圖所示的多邊形共有多少條對角線 (Diagonals)？<br>
-                <img src="https://via.placeholder.com/400x150.png?text=Regular+Hexagon" alt="Hexagon" style="margin-top:10px; border: 2px solid #555; border-radius: 5px;">
+                家寶在 $400$ 米賽跑的最後 $25$ 米超越了第二名，<br>問他最後以第幾名完成該賽事？
             </div>
             <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
             <div class="answer-box">
-                公式: $rac{n(n-3)}{2}$。對於六邊形 ($n=6$): <br>
-                $rac{6(6-3)}{2} = rac{6 	imes 3}{2} = \mathbf{9}$ 條
+                第二名
             </div>
         </div>
+
+        <!-- Slide 11: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 3 題</div>
+            <div class="q-text">
+                一桶水先用去 \(\dfrac{1}{3}\)，再用去剩下的 \(\dfrac{1}{2}\)，最後剩 $5$ 升。<br>
+		該桶水原本有多少升？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $15$ 升
+            </div>
+        </div>
+
+       <!-- Slide 12: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 4 題</div>
+            <div class="q-text">
+                買 $3$ 支原子筆和 $2$ 支螢光筆共 $\$34$，<br>買 $1$ 支原子筆和 $3$ 支螢光筆共 $\$30$。<br>一支原子筆多少錢？ 
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $\$6$
+            </div>
+        </div>
+
+       <!-- Slide 13: MCQ + LaTeX -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 5 題</div>
+            <div class="q-text">
+                $(a-b)^{2} \equiv$
+            </div>
+            <div class="mcq-container">
+                <div class="mcq-option">A.&ensp; $a^{2}-b^{2}$</div>
+                <div class="mcq-option">B.&ensp; $(a+b)(a-b)$</div>
+                <div class="mcq-option" id="mcq-2-ans">C.&ensp; $a^{2}-2ab+b^{2}$</div>
+                <div class="mcq-option">D.&ensp; $a^{2}-2ab-b^{2}$</div>
+            </div>
+            <button class="show-ans-btn" onclick="revealMCQ(this, 'mcq-2-ans')">顯示答案</button>
+            <div class="answer-box">
+                C
+            </div>
+        </div>
+
+       <!-- Slide 14: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 6 題</div>
+            <div class="q-text">
+                若 \(a \times b = 24\) 及 \(a + b = 11\)。<br> 求 \(a^2 + b^2 \)。
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $=(a+b)^{2}-2ab=121-48=73$
+            </div>
+        </div>
+
+       <!-- Slide 15: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 7 題</div>
+            <div class="q-text">
+                請順序回答 $100$ 至 $200$ 之間的平方數。
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $100, \quad 121, \quad 144, \quad 169, \quad 196$
+            </div>
+        </div>
+
+       <!-- Slide 16: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 8 題</div>
+            <div class="q-text">
+                請以英語讀出數字 $12\,345$。
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                twelve thousand three hundred (and) forty-five
+            </div>
+        </div>
+
+       <!-- Slide 17: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 9 題</div>
+            <div class="q-text">
+                $2$ 億是多少位的數字？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $9$ 位
+            </div>
+        </div>
+
+       <!-- Slide 18: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 10 題</div>
+            <div class="q-text">
+                由兩個 $2$ 和一個 $4$ 組成的所有三位數的平均數是多少？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $\dfrac{224+242+422}{3}=\dfrac{888}{3}=296$
+            </div>
+        </div>
+
+       <!-- Slide 19: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 11 題</div>
+            <div class="q-text">
+                首五次測驗的平均分 $80$ 分。<br>第六次測驗需考幾分才可使平均分增加 $2$ 分？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $92$ 分
+            </div>
+        </div>
+
+       <!-- Slide 20: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 12 題</div>
+            <div class="q-text">
+                陳太每 $4$ 天去一次超市，黃太每 $5$ 天去一次超市。<br>
+		她們上一次在超市相遇的日子是 $4$ 月 $15$ 日。<br>
+		她們最快會在何月何日在超市再次相遇？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $5$ 月 $5$ 日
+            </div>
+        </div>
+
+        <!-- Slide 21: Image Question Placeholder -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 13 題</div>
+            <div class="q-text">
+                某單淘汰賽比賽共有 $32$ 隊參賽隊伍。<br>
+		整個賽事共有多少場比賽場次？<br>
+		（賽事不設季軍賽）<br>
+                <img src="BQ13.png" alt="Hexagon" style="max-width: 30%; height: auto;">
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $31$ 場
+            </div>
+        </div>
+
+        <!-- Slide 22: Image Question Placeholder -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 14 題</div>
+            <div class="q-text">
+                圖片顯示一些相似三角形。<br>若中間的梯形面積為 $12$，求底部的梯形面積。<br>
+                <img src="BQ14.png" alt="Hexagon" style="max-width: 30%; height: auto;">
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $20$
+            </div>
+        </div>
+
+
+       <!-- Slide 23: MCQ + LaTeX -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 15 題</div>
+            <div class="q-text">
+                下列哪項的值與其他的不同？
+            </div>
+            <div class="mcq-container">
+                <div class="mcq-option">A.&ensp;  $2^{\frac{1}{2}}$</div>
+                <div class="mcq-option" id="mcq-3-ans">B.&ensp;  $-0.5^{-0.5}$</div>
+                <div class="mcq-option">C.&ensp;  $2\sin{45^{\circ}}$</div>
+                <div class="mcq-option">D.&ensp;  $-\dfrac{1}{\cos{135^{\circ}}}	$</div>
+            </div>
+            <button class="show-ans-btn" onclick="revealMCQ(this, 'mcq-3-ans')">顯示答案</button>
+            <div class="answer-box">
+                B
+            </div>
+        </div>
+
+        <!-- Slide 24: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 16 題</div>
+            <div class="q-text">
+                現有 $5$ 個鎖頭和 $5$ 把鑰匙，每把鑰匙可以開其中一個鎖頭。<br>
+		最多試幾次可以找出全部鎖頭跟鑰匙的正確配對？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $10$ 次
+            </div>
+        </div>
+
+       <!-- Slide 25: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 17 題</div>
+            <div class="q-text">
+                圓的半徑為 $5 \text{ cm}$，圓外一點 $P$ 到圓心的距離為 $13 \text{ cm}$。<br> 從 $P$ 作圓的兩條切線，切點為 $A$ 和 $B$。 求切線 $PA$ 的長度。
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $12 \text{ cm}$
+            </div>
+        </div>
+
+        <!-- Slide 26: Image Question Placeholder -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 18 題</div>
+            <div class="q-text">
+                DSE 數學卷一是以 A3 紙張對摺印刷的 A4 冊子。<br>每一張紙均需貼上考生的電腦條碼貼紙。<br>參閱以下指示，估算該卷有多少頁。<br>
+                <img src="BQ18.png" alt="Hexagon" style="max-width: 40%; height: auto;">
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                $24$ 頁
+            </div>
+        </div>
+
+
+      <!-- Slide 27: LaTeX Test -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 19 題</div>
+            <div class="q-text">
+                $A$、$B$、$C$ 三人，<br> $A$ 說：「$B$ 在說謊」，<br> $B$ 說：「$C$ 在說謊」，<br> $C$ 說：「$A$ 和 $B$ 都在說謊」。<br>誰說真話？
+            </div>
+            <button class="show-ans-btn" onclick="revealAnswer(this)">顯示答案</button>
+            <div class="answer-box">
+                \(B\) 說真話
+            </div>
+        </div>
+
+       <!-- Slide 28: MCQ + LaTeX -->
+        <div class="slide">
+            <div class="q-number">搶答題 第 20 題</div>
+            <div class="q-text">
+                前提 1： 所有的貓都有四條腿。<br>
+		前提 2： 這隻動物有四條腿。<br>
+		根據以上前提，以下哪一個結論必然為真？
+            </div>
+            <div class="mcq-container">
+                <div class="mcq-option">A.&ensp;  這隻動物是貓。</div>
+                <div class="mcq-option">B.&ensp;  這隻動物不是貓。</div>
+                <div class="mcq-option">C.&ensp;  所有貓都是動物。</div>
+                <div class="mcq-option" id="mcq-4-ans">D.&ensp;  有些有四條腿的動物是貓。</div>
+            </div>
+            <button class="show-ans-btn" onclick="revealMCQ(this, 'mcq-4-ans')">顯示答案</button>
+            <div class="answer-box">
+                D
+            </div>
+        </div>
+
 
     </div>
 
     <!-- 底部導航 -->
     <div id="navigation">
         <button class="nav-btn" onclick="changeSlide(-1)">◀ 上一頁</button>
-        <div style="color: #555; font-size: 0.9vw;">提示：懸停在計分板上點擊按鈕 | 鍵盤 ← → 可切換頁面</div>
+        <div style="color: #555; font-size: 0.9vw;">鍵盤 ← → 可切換頁面</div>
         <button class="nav-btn" onclick="changeSlide(1)">下一頁 ▶</button>
     </div>
 
